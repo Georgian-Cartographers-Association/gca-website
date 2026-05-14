@@ -6,6 +6,17 @@
     "description": "ეს პოსტი მაგალითისთვისაა. შეცვალე src/data/socialPosts.json ფაილში.",
     "descriptionEn": "This is an example post. Edit src/data/socialPosts.json to update.",
     "platform": "facebook",
+    "postUrl": "https://www.facebook.com/permalink.php?story_fbid=pfbid0EUHsvHxALoyRL4FAEPYTGxYud7zFMYoEF6qWeb7WrJErs9vREwGnyrjyrqtgbYRVl&id=61556291459201",
+    "publishedAt": "2025-05-14T00:00:00.000Z",
+    "thumbnailUrl": null
+  },
+  {
+    "id": "2",
+    "title": "მაგალითი — Facebook პოსტი 2",
+    "titleEn": "Example — Facebook post 2",
+    "description": "ეს პოსტი მაგალითისთვისაა. შეცვალე src/data/socialPosts.json ფაილში.",
+    "descriptionEn": "This is an example post. Edit src/data/socialPosts.json to update.",
+    "platform": "facebook",
     "postUrl": "https://www.facebook.com/permalink.php?story_fbid=pfbid0VKQwLL36Y1igrADZMMfUqZJTsB58YzJDSJzLiBrVyPzze7ZXV8rVXVUBVUJ6v5QSl&id=61556291459201",
     "publishedAt": "2025-05-14T00:00:00.000Z",
     "thumbnailUrl": null
