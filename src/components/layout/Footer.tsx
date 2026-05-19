@@ -1,7 +1,16 @@
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
-export default function Footer() {
+export default function Footer({ locale }: { locale: string }) {
+  const t = useTranslations("footer");
   const year = new Date().getFullYear();
+
+  const links = [
+    { href: `/${locale}/about`, label: t("about_link") },
+    { href: `/${locale}/news`, label: t("news_link") },
+    { href: `/${locale}/atlas`, label: t("atlas_link") },
+    { href: `/${locale}/membership`, label: t("membership_link") },
+  ];
 
   return (
     <footer className="bg-[#0a2342] text-white mt-auto">
@@ -18,17 +27,22 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-[#c8a951] font-semibold mb-3 text-sm uppercase tracking-wider">ბმულები</h4>
+            <h4 className="text-[#c8a951] font-semibold mb-3 text-sm uppercase tracking-wider">
+              {t("links")}
+            </h4>
             <ul className="space-y-2 text-sm text-white/70">
-              <li><a href="/ka/about" className="hover:text-white transition-colors">ასოციაციის შესახებ</a></li>
-              <li><a href="/ka/blog" className="hover:text-white transition-colors">სიახლეები</a></li>
-              <li><a href="/ka/atlas" className="hover:text-white transition-colors">ციფრული ატლასი</a></li>
-              <li><a href="/ka/membership" className="hover:text-white transition-colors">წევრობა</a></li>
+              {links.map(({ href, label }) => (
+                <li key={href}>
+                  <a href={href} className="hover:text-white transition-colors">{label}</a>
+                </li>
+              ))}
             </ul>
           </div>
 
           <div>
-            <h4 className="text-[#c8a951] font-semibold mb-3 text-sm uppercase tracking-wider">კონტაქტი</h4>
+            <h4 className="text-[#c8a951] font-semibold mb-3 text-sm uppercase tracking-wider">
+              {t("contact")}
+            </h4>
             <ul className="space-y-2 text-sm text-white/70">
               <li>📍 I. Chavchavadze Ave. 3, Tbilisi 0128</li>
               <li>📧 geocartographersassoc@gmail.com</li>
@@ -39,7 +53,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/10 mt-8 pt-6 text-center text-white/40 text-xs">
-          © {year} საქართველოს კარტოგრაფთა ასოციაცია. ყველა უფლება დაცულია.
+          © {year} საქართველოს კარტოგრაფთა ასოციაცია. {t("rights")}.
         </div>
       </div>
     </footer>

@@ -21,13 +21,15 @@ export default function LeafletMap() {
       };
       if (!container || container._leaflet_id) return;
 
-      // Fix default marker icon paths (Webpack/Next.js issue)
-      // @ts-expect-error _getIconUrl
-      delete leaflet.Icon.Default.prototype._getIconUrl;
-      leaflet.Icon.Default.mergeOptions({
+      const icon = leaflet.icon({
         iconUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
         iconRetinaUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png",
         shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [1, -34],
+        shadowSize: [41, 41],
+        shadowAnchor: [12, 41],
       });
 
       const map = leaflet.map("leaflet-map", {
@@ -45,15 +47,15 @@ export default function LeafletMap() {
         .addTo(map);
 
       leaflet
-        .marker([LAT, LNG])
+        .marker([LAT, LNG], { icon })
         .addTo(map)
-        .bindPopup(
-          `<div style="font-family:Georgia,serif;min-width:180px">
-            <strong style="color:#0a2342">საქართველოს კარტოგრაფთა ასოციაცია</strong><br/>
-            <span style="font-size:12px;color:#555">I. Chavchavadze Ave. 3, Tbilisi 0128</span>
-          </div>`
-        )
-        .openPopup();
+        .bindTooltip(
+          `<div style="font-family:Georgia,serif;line-height:1.5">
+            <strong style="color:#0a2342;font-size:13px">საქართველოს კარტოგრაფთა ასოციაცია</strong><br/>
+            <span style="font-size:11px;color:#555">I. Chavchavadze Ave. 3, Tbilisi 0128</span>
+          </div>`,
+          { permanent: true, direction: "top", offset: [0, -44] }
+        );
     });
   }, []);
 

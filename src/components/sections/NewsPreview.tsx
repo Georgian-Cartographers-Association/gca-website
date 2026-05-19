@@ -2,6 +2,7 @@ import Link from "next/link";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import { useTranslations } from "next-intl";
 
 type PostMeta = {
   slug: string;
@@ -41,6 +42,7 @@ function formatDate(iso: string) {
 }
 
 export default function NewsPreview({ locale }: { locale: string }) {
+  const t = useTranslations("blog");
   const posts = getLatestPosts(3);
 
   if (posts.length === 0) return null;
@@ -51,17 +53,17 @@ export default function NewsPreview({ locale }: { locale: string }) {
         <div className="flex items-end justify-between mb-10">
           <div>
             <p className="text-[#c8a951] text-sm font-semibold uppercase tracking-widest mb-2">
-              ბოლო სიახლეები
+              {t("latest")}
             </p>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0a2342] font-serif">
-              {locale === "en" ? "News" : "სიახლეები"}
+              {t("latest_title")}
             </h2>
           </div>
           <Link
             href={`/${locale}/blog`}
             className="hidden md:inline-flex text-[#0a2342] border border-[#0a2342]/30 px-5 py-2 rounded text-sm hover:bg-[#0a2342] hover:text-white transition-colors"
           >
-            {locale === "en" ? "All articles" : "ყველა სტატია"}
+            {t("all_posts")}
           </Link>
         </div>
 
@@ -93,7 +95,7 @@ export default function NewsPreview({ locale }: { locale: string }) {
                   href={`/${locale}/blog/${post.slug}`}
                   className="text-sm text-[#c8a951] font-semibold hover:underline"
                 >
-                  {locale === "en" ? "Read more" : "სრულად წაიკითხე"} →
+                  {t("read_more")} →
                 </Link>
               </div>
             </article>
@@ -105,7 +107,7 @@ export default function NewsPreview({ locale }: { locale: string }) {
             href={`/${locale}/blog`}
             className="inline-flex text-[#0a2342] border border-[#0a2342]/30 px-5 py-2 rounded text-sm hover:bg-[#0a2342] hover:text-white transition-colors"
           >
-            {locale === "en" ? "All articles" : "ყველა სტატია"}
+            {t("all_posts")}
           </Link>
         </div>
       </div>

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { X, ExternalLink } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 type SocialPost = {
   _id: string;
@@ -23,7 +24,6 @@ function buildEmbedSrc(platform: string, postUrl: string): string {
     )}&show_text=true&width=560`;
   }
   if (platform === "youtube") {
-    // youtube.com/watch?v=ID → embed/ID
     const match = postUrl.match(/[?&]v=([^&]+)/);
     if (match) return `https://www.youtube.com/embed/${match[1]}`;
   }
@@ -67,6 +67,7 @@ export function SocialPostCard({
   locale: string;
 }) {
   const [open, setOpen] = useState(false);
+  const t = useTranslations("news");
   const meta = PLATFORM_META[post.platform] ?? PLATFORM_META.facebook;
   const title = locale === "en" && post.titleEn ? post.titleEn : post.title;
   const description =
@@ -77,9 +78,7 @@ export function SocialPostCard({
 
   return (
     <>
-      {/* Card */}
       <article className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-[#0a2342]/5 flex flex-col">
-        {/* Thumbnail / placeholder */}
         <div className="relative h-44 w-full bg-[#f0f4f8] flex items-center justify-center overflow-hidden">
           {post.thumbnailUrl ? (
             <Image
@@ -97,7 +96,6 @@ export function SocialPostCard({
             </div>
           )}
 
-          {/* Platform badge */}
           <span
             className="absolute top-3 right-3 flex items-center gap-1.5 text-white text-xs font-semibold px-2 py-1 rounded-full"
             style={{ backgroundColor: meta.color }}
@@ -107,7 +105,6 @@ export function SocialPostCard({
           </span>
         </div>
 
-        {/* Content */}
         <div className="p-5 flex flex-col flex-1">
           <time className="text-xs text-[#0a2342]/40 mb-2 block">
             {formatDate(post.publishedAt)}
@@ -127,14 +124,14 @@ export function SocialPostCard({
               className="flex-1 text-center text-sm font-semibold text-white py-2 px-4 rounded transition-colors"
               style={{ backgroundColor: meta.color }}
             >
-              პოსტის ნახვა
+              {t("view_post")}
             </button>
             <a
               href={post.postUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded border border-[#0a2342]/15 text-[#0a2342]/50 hover:text-[#0a2342] transition-colors"
-              title="გახსნა ახალ ჩანართში"
+              title={t("open_in_new")}
             >
               <ExternalLink size={16} />
             </a>
@@ -142,21 +139,17 @@ export function SocialPostCard({
         </div>
       </article>
 
-      {/* Modal */}
       {open && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center p-4"
           onClick={() => setOpen(false)}
         >
-          {/* Backdrop */}
           <div className="absolute inset-0 bg-black/70 backdrop-blur-sm" />
 
-          {/* Modal content */}
           <div
             className="relative bg-white rounded-xl shadow-2xl w-full max-w-xl max-h-[90vh] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Header */}
             <div
               className="flex items-center justify-between px-5 py-4 rounded-t-xl"
               style={{ backgroundColor: meta.color }}
@@ -173,7 +166,6 @@ export function SocialPostCard({
               </button>
             </div>
 
-            {/* Embed */}
             <div className="p-4 flex justify-center bg-[#f8f5ef]">
               <iframe
                 src={embedSrc}
@@ -189,7 +181,6 @@ export function SocialPostCard({
               />
             </div>
 
-            {/* Footer */}
             <div className="px-5 py-3 border-t border-[#0a2342]/10 flex justify-between items-center">
               <span className="text-xs text-[#0a2342]/40">{title}</span>
               <a
@@ -200,7 +191,7 @@ export function SocialPostCard({
                 style={{ color: meta.color }}
               >
                 <ExternalLink size={12} />
-                {meta.label}-ზე გახსნა
+                {meta.label}
               </a>
             </div>
           </div>

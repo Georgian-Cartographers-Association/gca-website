@@ -16,33 +16,104 @@
   },
   "about": {
     "title": "About the Association",
+    "label": "About",
+    "hero_title": "Georgian Cartographers Association",
+    "hero_subtitle": "Since 1994, we unite Georgian cartographers, geographers and GIS specialists — for the development and international recognition of Georgian cartography.",
     "mission": "Mission",
-    "mission_text": "The Georgian Cartographers Association unites Georgian cartographers, geographers and GIS specialists.",
+    "mission_text": "Development, promotion and integration of Georgian cartography with international standards.",
+    "vision": "Vision",
+    "vision_text": "Cartography — an accessible science for all. Open data, modern technologies.",
+    "values": "Values",
+    "values_text": "Accuracy, innovation, transparency and international cooperation.",
     "history": "History",
-    "team": "Team"
+    "chronology": "Timeline",
+    "team": "Team",
+    "board": "Board",
+    "all": "All",
+    "search_placeholder": "Search by name...",
+    "no_results": "No matching member found",
+    "photo": "Photo",
+    "bio_placeholder": "Short biography — specialty, experience, organization.",
+    "role_board": "GCA Board Member",
+    "role_scientific": "GCA Scientific Council Member",
+    "history_1994": "Foundation of the Association",
+    "history_1998": "Full member of ICA (International Cartographic Association)",
+    "history_2005": "Publication of the first national atlas",
+    "history_2012": "Creation of the Digital Cartography Division",
+    "history_2018": "Development of national GIS standards",
+    "history_2024": "Launch of the Open Data Platform"
   },
   "blog": {
-    "title": "News",
+    "label": "Blog",
+    "title": "Articles",
     "read_more": "Read more",
-    "all_posts": "All posts"
+    "all_posts": "All posts",
+    "no_posts": "No articles have been added yet",
+    "back": "Back to articles",
+    "not_found": "Article not found",
+    "author": "Author",
+    "author_name": "Georgian Cartographers Association",
+    "latest": "Latest news",
+    "latest_title": "News"
   },
   "membership": {
-    "title": "Membership",
+    "label": "Membership",
+    "title": "Become a member of the Association",
+    "hero_subtitle": "Join the community of Georgian cartographers.",
     "join": "Become a member",
-    "benefits": "Benefits"
+    "benefits": "Benefits",
+    "benefits_title": "Membership benefits",
+    "cta_label": "Contact us",
+    "cta_title": "Interested in membership?",
+    "cta_text": "Contact us by email or phone — we will answer all your questions and help you through the membership process.",
+    "form_button": "Membership form",
+    "contact_link_text": "Detailed contact information and address —",
+    "contact_link": "Contact page",
+    "benefit_ica": "Participation in ICA (International Cartographic Association) events",
+    "benefit_bulletin": "Free subscription to the Association's scientific bulletin",
+    "benefit_network": "Professional network — colleagues from Georgia",
+    "benefit_certificates": "Certificates and professional development programs",
+    "benefit_conferences": "Discounted fees for international conferences",
+    "benefit_library": "Access to the Association's library and resources"
   },
   "atlas": {
     "title": "Digital Atlas",
     "subtitle": "Interactive maps and geographical data"
   },
   "contact": {
-    "title": "Contact",
-    "name": "Name",
+    "label": "Contact",
+    "title": "Contact Us",
+    "hero_subtitle": "Questions, suggestions or membership — write to us.",
+    "info_title": "Contact Information",
+    "address": "Address",
     "email": "Email",
+    "working_hours": "Working Hours",
+    "working_hours_value": "Mon–Fri: 10:00 – 18:00",
+    "name": "Name",
     "message": "Message",
     "send": "Send"
   },
+  "news": {
+    "label": "Social Media",
+    "title": "News",
+    "subtitle": "All Association social media posts in one place",
+    "no_posts": "No posts have been added yet",
+    "view_post": "View post",
+    "open_in_new": "Open in new tab"
+  },
+  "stats": {
+    "founded": "Founded",
+    "members": "Members",
+    "atlases": "Published atlases",
+    "ica": "Int. association member"
+  },
   "footer": {
-    "rights": "All rights reserved"
+    "rights": "All rights reserved",
+    "links": "Links",
+    "contact": "Contact",
+    "about_link": "About the Association",
+    "news_link": "News",
+    "atlas_link": "Digital Atlas",
+    "membership_link": "Membership"
   }
 }

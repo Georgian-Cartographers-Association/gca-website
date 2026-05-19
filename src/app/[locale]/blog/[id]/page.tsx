@@ -5,6 +5,7 @@ import path from "path";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
 import { ArrowLeft, Calendar, Tag } from "lucide-react";
+import { getTranslations } from "next-intl/server";
 
 type PostMeta = {
   title: string;
@@ -28,15 +29,16 @@ export default async function BlogPostPage({
   params: Promise<{ locale: string; id: string }>;
 }) {
   const { locale, id } = await params;
+  const t = await getTranslations("blog");
   const post = getPost(id);
 
   if (!post) {
     return (
       <div className="bg-[#f8f5ef] min-h-screen flex items-center justify-center">
         <div className="text-center">
-          <p className="text-[#0a2342]/50 mb-4">სტატია ვერ მოიძებნა</p>
+          <p className="text-[#0a2342]/50 mb-4">{t("not_found")}</p>
           <Link href={`/${locale}/blog`} className="text-[#c8a951] hover:underline">
-            ← სტატიებზე დაბრუნება
+            ← {t("back")}
           </Link>
         </div>
       </div>
@@ -53,7 +55,7 @@ export default async function BlogPostPage({
           href={`/${locale}/blog`}
           className="inline-flex items-center gap-2 text-[#0a2342]/60 hover:text-[#0a2342] text-sm mb-8 transition-colors"
         >
-          <ArrowLeft size={16} /> სტატიებზე დაბრუნება
+          <ArrowLeft size={16} /> {t("back")}
         </Link>
 
         <article className="bg-white rounded-lg shadow-sm overflow-hidden">
@@ -98,8 +100,8 @@ export default async function BlogPostPage({
             </div>
 
             <div className="mt-10 pt-8 border-t border-[#0a2342]/10">
-              <p className="text-xs text-[#0a2342]/40 uppercase tracking-wider">ავტორი</p>
-              <p className="text-[#0a2342] font-semibold mt-1">საქართველოს კარტოგრაფთა ასოციაცია</p>
+              <p className="text-xs text-[#0a2342]/40 uppercase tracking-wider">{t("author")}</p>
+              <p className="text-[#0a2342] font-semibold mt-1">{t("author_name")}</p>
             </div>
           </div>
         </article>

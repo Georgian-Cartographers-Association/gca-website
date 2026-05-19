@@ -3,6 +3,7 @@ import Image from "next/image";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import { getTranslations } from "next-intl/server";
 
 type PostMeta = {
   slug: string;
@@ -46,14 +47,17 @@ export default async function BlogPage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  const t = await getTranslations("blog");
   const posts = getPosts();
 
   return (
     <div>
       <section className="bg-[#0a2342] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-[#c8a951] text-sm font-semibold uppercase tracking-widest mb-3">ბლოგი</p>
-          <h1 className="text-4xl md:text-5xl font-bold font-serif">სტატიები</h1>
+          <p className="text-[#c8a951] text-sm font-semibold uppercase tracking-widest mb-3">
+            {t("label")}
+          </p>
+          <h1 className="text-4xl md:text-5xl font-bold font-serif">{t("title")}</h1>
         </div>
       </section>
 
@@ -62,7 +66,7 @@ export default async function BlogPage({
           {posts.length === 0 ? (
             <div className="text-center py-20">
               <div className="text-6xl mb-4">✍️</div>
-              <p className="text-[#0a2342]/50">სტატიები ჯერ არ დამატებულა</p>
+              <p className="text-[#0a2342]/50">{t("no_posts")}</p>
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -99,7 +103,7 @@ export default async function BlogPage({
                       href={`/${locale}/blog/${post.slug}`}
                       className="text-sm text-[#c8a951] font-semibold hover:underline"
                     >
-                      სრულად წაიკითხე →
+                      {t("read_more")} →
                     </Link>
                   </div>
                 </article>
