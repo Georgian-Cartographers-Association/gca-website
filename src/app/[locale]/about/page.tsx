@@ -3,40 +3,40 @@
 import { MapPin, Users, Award, Camera, X } from "lucide-react";
 import Image from "next/image";
 import { useState, useMemo } from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 type RoleKey = "board" | "scientific" | "president_board" | "vice_president_board" | "secretary_general_board" | "academic_secretary_board";
 
-const team: { name: string; role: RoleKey; photo?: string }[] = [
-  { name: "თენგიზ გორდეზიანი", role: "president_board" },
-  { name: "თედო გორგოძე", role: "vice_president_board" },
-  { name: "ზურაბ ლაოშვილი", role: "vice_president_board" },
-  { name: "გოჩა გუძუაძე", role: "vice_president_board" },
-  { name: "საბა მოდებაძე", role: "secretary_general_board" },
-  { name: "მარიამ გაგოშაშვილი", role: "board" },
-  { name: "რევაზ თოლორდავა", role: "board" },
-  { name: "ხატია ყველაშვილი", role: "academic_secretary_board" },
-  { name: "ილია ქავთარაძე", role: "board" },
-  { name: "ლიკა ცერცვაძე", role: "board", photo: "/team/lika_cercvadze.jpg" },
-  { name: "გიორგი ბერუჩაშვილი", role: "scientific" },
-  { name: "ლალი გოგინავა", role: "scientific" },
-  { name: "სოფიო გორგიჯანიძე", role: "scientific" },
-  { name: "გიორგი დვალაშვილი", role: "scientific" },
-  { name: "ნოდარ ელიზბარაშვილი", role: "scientific" },
-  { name: "თეონა თიგიშვილი", role: "scientific" },
-  { name: "გიორგი კაპანაძე", role: "scientific", photo: "/team/Giorgi_Kapanadze.jpg" },
-  { name: "ნატო მაისურაძე", role: "scientific" },
-  { name: "რობერტ მაღლაკელიძე", role: "scientific" },
-  { name: "დემეტრე მოდებაძე", role: "scientific" },
-  { name: "გიორგი მძელური", role: "scientific" },
-  { name: "დავით სვანაძე", role: "scientific" },
-  { name: "მანანა შარაშენიძე", role: "scientific" },
-  { name: "ვანო ცარციძე", role: "scientific" },
-  { name: "ნოდარ ხორბალაძე", role: "scientific" },
-  { name: "თამარ ჭიჭინაძე", role: "scientific" },
-  { name: "ნიკა ბერუჩაშვილი", role: "scientific" },
-  { name: "ვლადიმერ ბუაჩიძე", role: "scientific" },
-  { name: "გიორგი გაფრინდაშვილი", role: "scientific" },
+const team: { name: string; nameEn: string; role: RoleKey; photo?: string }[] = [
+  { name: "თენგიზ გორდეზიანი", nameEn: "Tengiz Gordeziani", role: "president_board" },
+  { name: "თედო გორგოძე", nameEn: "Tedo Gorgodze", role: "vice_president_board" },
+  { name: "ზურაბ ლაოშვილი", nameEn: "Zurab Laoshvili", role: "vice_president_board" },
+  { name: "გოჩა გუძუაძე", nameEn: "Gocha Gudzuadze", role: "vice_president_board" },
+  { name: "საბა მოდებაძე", nameEn: "Saba Modebadze", role: "secretary_general_board" },
+  { name: "მარიამ გაგოშაშვილი", nameEn: "Mariam Gagoshashvili", role: "board" },
+  { name: "რევაზ თოლორდავა", nameEn: "Revaz Tolordava", role: "board" },
+  { name: "ხატია ყველაშვილი", nameEn: "Khatia Kvelashvili", role: "academic_secretary_board" },
+  { name: "ილია ქავთარაძე", nameEn: "Ilia Kavtaradze", role: "board" },
+  { name: "ლიკა ცერცვაძე", nameEn: "Lika Tsertsvadze", role: "board", photo: "/team/lika_cercvadze.jpg" },
+  { name: "გიორგი ბერუჩაშვილი", nameEn: "Giorgi Beruchashvili", role: "scientific" },
+  { name: "ლალი გოგინავა", nameEn: "Lali Goginava", role: "scientific" },
+  { name: "სოფიო გორგიჯანიძე", nameEn: "Sopio Gorgijanidze", role: "scientific" },
+  { name: "გიორგი დვალაშვილი", nameEn: "Giorgi Dvalashvili", role: "scientific" },
+  { name: "ნოდარ ელიზბარაშვილი", nameEn: "Nodar Elizbarashvili", role: "scientific" },
+  { name: "თეონა თიგიშვილი", nameEn: "Teona Tigishvili", role: "scientific" },
+  { name: "გიორგი კაპანაძე", nameEn: "Giorgi Kapanadze", role: "scientific", photo: "/team/Giorgi_Kapanadze.jpg" },
+  { name: "ნატო მაისურაძე", nameEn: "Nato Maisuradze", role: "scientific" },
+  { name: "რობერტ მაღლაკელიძე", nameEn: "Robert Maghlakelidze", role: "scientific" },
+  { name: "დემეტრე მოდებაძე", nameEn: "Demetre Modebadze", role: "scientific" },
+  { name: "გიორგი მძელური", nameEn: "Giorgi Mdzeluri", role: "scientific" },
+  { name: "დავით სვანაძე", nameEn: "Davit Svanadze", role: "scientific" },
+  { name: "მანანა შარაშენიძე", nameEn: "Manana Sharashenidze", role: "scientific" },
+  { name: "ვანო ცარციძე", nameEn: "Vano Tsartsidze", role: "scientific" },
+  { name: "ნოდარ ხორბალაძე", nameEn: "Nodar Khorbaladze", role: "scientific" },
+  { name: "თამარ ჭიჭინაძე", nameEn: "Tamar Chichinadze", role: "scientific" },
+  { name: "ნიკა ბერუჩაშვილი", nameEn: "Nika Beruchashvili", role: "scientific" },
+  { name: "ვლადიმერ ბუაჩიძე", nameEn: "Vladimer Buachidze", role: "scientific" },
+  { name: "გიორგი გაფრინდაშვილი", nameEn: "Giorgi Gaprindashvili", role: "scientific" },
 ];
 
 function TeamCard({
@@ -72,6 +72,7 @@ function TeamCard({
 
 export default function AboutPage() {
   const t = useTranslations("about");
+  const locale = useLocale();
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedRole, setSelectedRole] = useState<RoleKey | null>(null);
 
@@ -235,7 +236,7 @@ export default function AboutPage() {
               {filteredTeam.map((member, i) => (
                 <TeamCard
                   key={i}
-                  name={member.name}
+                  name={locale === "en" ? member.nameEn : member.name}
                   roleLabel={roleLabel(member.role)}
                   bio={t("bio_placeholder")}
                   photo={member.photo ?? null}
