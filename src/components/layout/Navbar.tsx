@@ -28,7 +28,7 @@ export default function Navbar() {
   function toggleLocale() {
     const segments = pathname.split("/");
     segments[1] = otherLocale;
-    router.push(segments.join("/") || "/");
+    router.push(segments.join("/") || "/", { scroll: false });
   }
 
   function localePath(href: string) {
