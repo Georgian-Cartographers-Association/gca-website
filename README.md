@@ -4,7 +4,7 @@
 
 სკა არის პროფესიული და სამეცნიერო ორგანიზაცია, რომელიც 1998 წელს დაარსდა საქართველოში კარტოგრაფიის, გეოდეზიისა და გეოინფორმაციული მეცნიერებების განვითარების მიზნით.
 
-🌐 **[gc.qgis.ge](https://gc.qgis.ge/ka)**
+🌐 **[gc.qgis.ge](https://gc.qgis.ge/ka)** · **[gca-website-henna.vercel.app](https://gca-website-henna.vercel.app)**
 
 ---
 
