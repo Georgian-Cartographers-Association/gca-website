@@ -4,9 +4,9 @@ export default function Stats() {
   const t = useTranslations("stats");
 
   const stats = [
-    { value: "1994", labelKey: "founded" },
+    { value: "1998", labelKey: "founded" },
     { value: "200+", labelKey: "members" },
-    { value: "50+", labelKey: "atlases" },
+    { value: "20+", labelKey: "atlases" },
     { value: "ICA", labelKey: "ica" },
   ];
 

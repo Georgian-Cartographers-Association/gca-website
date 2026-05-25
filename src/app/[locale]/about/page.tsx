@@ -5,16 +5,17 @@ import Image from "next/image";
 import { useState, useMemo } from "react";
 import { useTranslations } from "next-intl";
 
-type RoleKey = "board" | "scientific";
+type RoleKey = "board" | "scientific" | "president_board" | "vice_president_board" | "secretary_general_board" | "academic_secretary_board";
 
 const team: { name: string; role: RoleKey; photo?: string }[] = [
-  { name: "თედო გორგოძე", role: "board" },
-  { name: "ზურაბ ლაოშვილი", role: "board" },
-  { name: "გოჩა გუძუაძე", role: "board" },
-  { name: "საბა მოდებაძე", role: "board" },
+  { name: "თენგიზ გორდეზიანი", role: "president_board" },
+  { name: "თედო გორგოძე", role: "vice_president_board" },
+  { name: "ზურაბ ლაოშვილი", role: "vice_president_board" },
+  { name: "გოჩა გუძუაძე", role: "vice_president_board" },
+  { name: "საბა მოდებაძე", role: "secretary_general_board" },
   { name: "მარიამ გაგოშაშვილი", role: "board" },
   { name: "რევაზ თოლორდავა", role: "board" },
-  { name: "ხატია ყველაშვილი", role: "board" },
+  { name: "ხატია ყველაშვილი", role: "academic_secretary_board" },
   { name: "ილია ქავთარაძე", role: "board" },
   { name: "ლიკა ცერცვაძე", role: "board", photo: "/team/lika_cercvadze.jpg" },
   { name: "გიორგი ბერუჩაშვილი", role: "scientific" },
@@ -74,17 +75,29 @@ export default function AboutPage() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedRole, setSelectedRole] = useState<RoleKey | null>(null);
 
-  const roleKeys: RoleKey[] = ["board", "scientific"];
+  const roleKeys: ("board" | "scientific")[] = ["board", "scientific"];
 
-  const roleLabel = (key: RoleKey) =>
-    key === "board" ? t("role_board") : t("role_scientific");
+  const isBoardRole = (role: RoleKey) => role !== "scientific";
+
+  const roleLabel = (key: RoleKey): string => {
+    switch (key) {
+      case "president_board": return t("role_president_board");
+      case "vice_president_board": return t("role_vice_president_board");
+      case "secretary_general_board": return t("role_secretary_general_board");
+      case "academic_secretary_board": return t("role_academic_secretary_board");
+      case "scientific": return t("role_scientific");
+      default: return t("role_board");
+    }
+  };
 
   const filteredTeam = useMemo(() => {
     return team.filter((member) => {
       const matchesName = member.name
         .toLowerCase()
         .includes(searchQuery.toLowerCase());
-      const matchesRole = selectedRole === null || member.role === selectedRole;
+      const matchesRole =
+        selectedRole === null ||
+        (selectedRole === "board" ? isBoardRole(member.role) : member.role === selectedRole);
       return matchesName && matchesRole;
     });
   }, [searchQuery, selectedRole]);
@@ -199,7 +212,7 @@ export default function AboutPage() {
                 {t("all")} ({team.length})
               </button>
               {roleKeys.map((key) => {
-                const count = team.filter((m) => m.role === key).length;
+                const count = team.filter((m) => key === "board" ? isBoardRole(m.role) : m.role === key).length;
                 return (
                   <button
                     key={key}
