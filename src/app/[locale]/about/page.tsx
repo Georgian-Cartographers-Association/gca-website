@@ -42,12 +42,10 @@ const team: { name: string; nameEn: string; role: RoleKey; photo?: string }[] = 
 function TeamCard({
   name,
   roleLabel,
-  bio,
   photo,
 }: {
   name: string;
   roleLabel: string;
-  bio: string;
   photo: string | null;
 }) {
   return (
@@ -64,7 +62,6 @@ function TeamCard({
       <div className="p-5 text-center">
         <h3 className="font-bold text-[#0a2342] font-serif text-lg">{name}</h3>
         <p className="text-[#c8a951] text-sm font-semibold mt-1">{roleLabel}</p>
-        <p className="text-[#0a2342]/60 text-xs mt-3 leading-relaxed">{bio}</p>
       </div>
     </div>
   );
@@ -244,7 +241,7 @@ export default function AboutPage() {
                   key={i}
                   name={locale === "en" ? member.nameEn : member.name}
                   roleLabel={roleLabel(member.role)}
-                  bio={t("bio_placeholder")}
+
                   photo={member.photo ?? null}
                 />
               ))}
