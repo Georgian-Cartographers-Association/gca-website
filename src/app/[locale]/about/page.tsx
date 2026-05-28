@@ -104,12 +104,18 @@ export default function AboutPage() {
   }, [searchQuery, selectedRole]);
 
   const historyItems = [
-    { year: "1994", textKey: "history_1994" as const },
     { year: "1998", textKey: "history_1998" as const },
-    { year: "2005", textKey: "history_2005" as const },
-    { year: "2012", textKey: "history_2012" as const },
+    { year: "2006", textKey: "history_2006" as const },
+    { year: "2014", textKey: "history_2014" as const },
+    { year: "2015", textKey: "history_2015" as const },
+    { year: "2017", textKey: "history_2017" as const },
     { year: "2018", textKey: "history_2018" as const },
+    { year: "2019", textKey: "history_2019" as const },
+    { year: "2020", textKey: "history_2020" as const },
+    { year: "2022", textKey: "history_2022" as const },
+    { year: "2023", textKey: "history_2023" as const },
     { year: "2024", textKey: "history_2024" as const },
+    { year: "2025", textKey: "history_2025" as const },
   ];
 
   const missionCards = [
