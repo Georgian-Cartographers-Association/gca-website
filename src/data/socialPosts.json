@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "id": "1",
     "title": "Facebook პოსტი",
@@ -22,8 +22,20 @@
     "thumbnailUrl": "https://scontent.ftbs5-3.fna.fbcdn.net/v/t39.30808-6/687706465_122297330690209715_7109363473813528806_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEelssY6AyRSmuVvlR9Sp66d9biTzCG9-t31uJPMIb366zfvBdyQJ00QSDroPTjjgqisB4XqCULRmU9X8mOZCOW&_nc_ohc=Z1nTGY6VZqcQ7kNvwEll2ND&_nc_oc=AdqwFSXfPZJLAv8U9164SF7wENN57cRElOt3eljZvJoZb8wdc86u9s2a5RHAwRdnX6o&_nc_zt=23&_nc_ht=scontent.ftbs5-3.fna&_nc_gid=2r4gIUdEg44Tg_VvUXAvEw&_nc_ss=7b2a8&oh=00_Af6GknQIPQgjcJ4Tcz8Xh-75QRidwnAj5MUVImLAs8gYYQ&oe=6A109FA1"
   },
   {
+    "id": "3",
+    "pinned": false,
+    "title": "18 მაისი მუზეუმების საერთაშორისო დღეა.",
+    "titleEn": "May 18 — International Museum Day",
+    "description": "ეს დღე განსაკუთრებულია მათთვისაც, ვისაც რუკები, ატლასები, გეოგრაფიული აღმოჩენები და კარტოგრაფიის ისტორია აინტერესებს. 🌍🗺️",
+    "descriptionEn": "This day is special for those interested in maps, atlases, geographical discoveries, and the history of cartography. 🌍🗺️",
+    "platform": "facebook",
+    "postUrl": "https://www.facebook.com/photo/?fbid=122299580384209715&set=a.122100204860209715",
+    "publishedAt": "2025-05-18T00:00:00.000Z",
+    "thumbnailUrl": "https://scontent.ftbs5-3.fna.fbcdn.net/v/t39.30808-6/700691805_122299580390209715_3521989861403011345_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFpsTAqa3T3NBd-1Rm625aeHZrba307hLodmttrfTuEuohCTyOqqj-ufLWnIl9_zpLsNfmKS4YmYGHGWrKc4Oqy&_nc_ohc=D2FU82Zu9AUQ7kNvwHDu9uT&_nc_oc=AdoACh7SjehatNfyKkKQ9ATL6L9vOSDcHNVehZT85-zdcph6CvQPrL2mWTVGWu1B1yw&_nc_zt=23&_nc_ht=scontent.ftbs5-3.fna&_nc_gid=jlwD5jNph83NWOzVzrsejQ&_nc_ss=7b2a8&oh=00_Af5mlbA6Tqn58YfUCrP8Vi27dqArEd3AHNwpJC9oTrAuFA&oe=6A109A2E"
+  },
+  {
     "id": "4",
-    "pinned": true,
+    "pinned": false,
     "title": "🍇🍷🗺️ 25 მაისი — ღვინის ეროვნული დღე",
     "titleEn": "🍇🍷🗺️ May 25 — National Wine Day",
     "description": "საქართველო ღვინის სამშობლოა. ქვეყანა, სადაც 8000-წლოვანი მეღვინეობის კულტურა თანამედროვე ტექნოლოგიებთან და სივრცით ანალიზთან ერთად ვითარდება. სწორედ ამ პროცესში განსაკუთრებული მნიშვნელობა ენიჭება კარტოგრაფიას, GIS-სა და ვენახების კადასტრს. ©ლიკა ცერცვაძე",
@@ -34,15 +46,88 @@
     "thumbnailUrl": "https://scontent.ftbs5-3.fna.fbcdn.net/v/t39.30808-6/706981960_122300583926209715_7066486370084110822_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFFO7HLWkp5HTfPkNBfa1d4hfEL0t7q2nWF8QvS3uradZWe6dcb93FkvLH3CGcmKHvpy2cUQhK0VeOgiWkRbZEl&_nc_ohc=7l_p2lNziFYQ7kNvwG4bOAG&_nc_oc=AdpWeylS0trX2QSudldZ9jYZaZm7-x6oUki8QcA_CcHlnmUL1_8tFYPB8igE8t-5Mrc&_nc_zt=23&_nc_ht=scontent.ftbs5-3.fna&_nc_gid=RkrcvxVucJ8gn7V0GrJBQA&_nc_ss=7b2a8&oh=00_Af5Q0uVQXLkK8EF38CYbnwRot4HhOAkQOQ_uIdpiKKv6ew&oe=6A19FB21"
   },
   {
-    "id": "3",
-    "pinned": true,
-    "title": "18 მაისი მუზეუმების საერთაშორისო დღეა.",
-    "titleEn": "International Museum Day",
-    "description": " ეს დღე განსაკუთრებულია მათთვისაც, ვისაც რუკები, ატლასები, გეოგრაფიული აღმოჩენები და კარტოგრაფიის ისტორია აინტერესებს. 🌍🗺️",
-    "descriptionEn": "This day is special for those interested in maps, atlases, geographical discoveries, and the history of cartography. 🌍🗺️",
+    "id": "5",
+    "pinned": false,
+    "title": "25 მაისი ქართველი გეოდეზისტისა და კარტოგრაფის, თემურ (თეიმურაზ) კიკნაძის დაბადების დღეა.",
+    "titleEn": "May 25 — Birthday of Georgian Geodesist and Cartographer Temur (Teimuraz) Kiknadze",
+    "description": "🗺️ თემურ კიკნაძე (1943–2019) იყო ქართული გეოდეზიისა და კარტოგრაფიული განათლების ერთ-ერთი ღირსეული წარმომადგენელი, რომელმაც მრავალი ათწლეულის განმავლობაში მნიშვნელოვანი წვლილი შეიტანა პროფესიული განათლების, გეოდეზიური მეცნიერებისა და მომავალი სპეციალისტების აღზრდის საქმეში.",
+    "descriptionEn": "🗺️ Temur Kiknadze (1943–2019) was one of the distinguished representatives of Georgian geodesy and cartographic education, who made a significant contribution to professional education, geodetic science, and the training of future specialists over many decades.",
     "platform": "facebook",
-    "postUrl": "https://www.facebook.com/photo/?fbid=122299580384209715&set=a.122100204860209715",
-    "publishedAt": "2025-05-18T00:00:00.000Z",
-    "thumbnailUrl": "https://scontent.ftbs5-3.fna.fbcdn.net/v/t39.30808-6/700691805_122299580390209715_3521989861403011345_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFpsTAqa3T3NBd-1Rm625aeHZrba307hLodmttrfTuEuohCTyOqqj-ufLWnIl9_zpLsNfmKS4YmYGHGWrKc4Oqy&_nc_ohc=D2FU82Zu9AUQ7kNvwHDu9uT&_nc_oc=AdoACh7SjehatNfyKkKQ9ATL6L9vOSDcHNVehZT85-zdcph6CvQPrL2mWTVGWu1B1yw&_nc_zt=23&_nc_ht=scontent.ftbs5-3.fna&_nc_gid=jlwD5jNph83NWOzVzrsejQ&_nc_ss=7b2a8&oh=00_Af5mlbA6Tqn58YfUCrP8Vi27dqArEd3AHNwpJC9oTrAuFA&oe=6A109A2E"
+    "postUrl": "https://www.facebook.com/photo?fbid=122300645786209715&set=a.122100204860209715",
+    "publishedAt": "2026-05-25T00:00:00.000Z",
+    "thumbnailUrl": "https://scontent.ftbs5-4.fna.fbcdn.net/v/t39.30808-6/705121770_122300645792209715_7883069539171509206_n.jpg?stp=dst-jpg_tt6&cstp=mx1254x1254&ctp=s1254x1254&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGCwzEu1xW0gjzo0CILNNF7lppE3h6hQqeWmkTeHqFCpwVCSetNFzf86v7ux7rm5ERlwxb-49vkV8Z7xLahLoKY&_nc_ohc=j1dx0G41WWAQ7kNvwGqSVXg&_nc_oc=AdrXnrIunEQirPtCyxSGHVAntbK4Q9yATXRlP-6b6ecSTaGXy3AJQ7zW58pb96FDWts&_nc_zt=23&_nc_ht=scontent.ftbs5-4.fna&_nc_gid=TlyOZTc0MDpGYm7szxAwCw&_nc_ss=7b2a8&oh=00_Af_C10YLPBbx9THfeLbbnr9V_o7uh4zqLKQCPdRWB_TS4w&oe=6A2998AD"
+  },
+  {
+    "id": "6",
+    "pinned": true,
+    "title": "საერთაშორისო სამეცნიერო კონფერენცია — „Cartography and Modernity (CAM 2026)\".",
+    "titleEn": "International Scientific Conference — \"Cartography and Modernity (CAM 2026)\"",
+    "description": "მოხარულნი ვართ გაცნობოთ, რომ საერთაშორისო კარტოგრაფიული ასოციაციის (ICA) მიერ ოფიციალურად მხარდაჭერილ კონფერენციათა სიაში შეტანილია საერთაშორისო სამეცნიერო კონფერენცია — „Cartography and Modernity (CAM 2026)\", რომელიც 2026 წლის 29-31 ოქტომბერს, თბილისში გაიმართება.",
+    "descriptionEn": "We are pleased to announce that the International Scientific Conference \"Cartography and Modernity (CAM 2026)\", to be held in Tbilisi on October 29–31, 2026, has been officially included in the list of conferences supported by the International Cartographic Association (ICA).",
+    "platform": "facebook",
+    "postUrl": "https://www.facebook.com/photo?fbid=122301407240209715&set=a.122100204860209715",
+    "publishedAt": "2026-05-27T00:00:00.000Z",
+    "thumbnailUrl": "https://scontent.ftbs5-2.fna.fbcdn.net/v/t39.30808-6/709466510_122301407252209715_1803262095293071138_n.jpg?stp=dst-jpg_tt6&cstp=mx3880x1080&ctp=s3880x1080&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEQCdMue5CfJ_lavXtOVrrG9bS0lc2ErtL1tLSVzYSu0p4OdUnWOiXx85TopFW5IA63FoD2ZXkQY3yAo9zhDfbF&_nc_ohc=UgWSSyG1z2QQ7kNvwGHiA0h&_nc_oc=AdpBQsKxkcFAEDrxygCr7UVH53NdXW6ebb7lTyhL1KfN1EZfiZDC9ubpARRmZS3PfLI&_nc_zt=23&_nc_ht=scontent.ftbs5-2.fna&_nc_gid=nSISHCgSjdRfyIRXgZmKKg&_nc_ss=7b2a8&oh=00_Af-qKI6264udG-pGmt4aYXEBzxgECwqSi_if7lWcGNi-7A&oe=6A29B1C8"
+  },
+  {
+    "id": "7",
+    "pinned": false,
+    "title": "დემურ დავითის ძე ტაბიძე (1933–2006)",
+    "titleEn": "Demur Tabidze (1933–2006)",
+    "description": "საქართველოს კარტოგრაფთა ასოციაცია პატივს მიაგებს ქართველი გეომორფოლოგის, კარტოგრაფისა და მეცნიერის, დემურ ტაბიძის ხსოვნას, რომლის დაბადებიდან დღეს 92 წელი შესრულდა.",
+    "descriptionEn": "The Georgian Cartographers Association pays tribute to the memory of Georgian geomorphologist, cartographer and scientist Demur Tabidze, on the 92nd anniversary of his birth.",
+    "platform": "facebook",
+    "postUrl": "https://www.facebook.com/photo?fbid=122301541088209715",
+    "publishedAt": "2025-05-28T00:00:00.000Z",
+    "thumbnailUrl": "https://scontent.ftbs5-2.fna.fbcdn.net/v/t39.30808-6/713691749_122301541094209715_1535331702794875428_n.jpg?stp=dst-jpg_tt6&cstp=mx1000x1000&ctp=s1000x1000&_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeG_r3oFpeOkfNd7gu2jag7YW_O4lLHh1p5b87iUseHWnhyoR_u0FX1XdSG60JGBvKWZP1nZK6ZREotAzrqu9-nG&_nc_ohc=xzQtX4Ts5G0Q7kNvwFWIe2A&_nc_oc=AdoGiGwpudDMva7D3YTz0fV_X-M5PLG8sKObzBHwvSMWH5Fpv5TgsGLxN7CN-3JLOyQ&_nc_zt=23&_nc_ht=scontent.ftbs5-2.fna&_nc_gid=Gmc_48RPvqW4bE-W-hlDKQ&_nc_ss=7b2a8&oh=00_Af9ijzC4zXiBoTAHD01AIOaNFuYQVCF9PRomYFOFHClp9g&oe=6A29A79B"
+  },
+  {
+    "id": "8",
+    "pinned": false,
+    "title": "მერი მირიანის ასული გაგუა",
+    "titleEn": "Mary Gagua — Birthday",
+    "description": "1 ივნისი ქართველი კარტოგრაფის, მრავალწლიანი პროფესიული და სამეცნიერო საქმიანობის მქონე სპეციალისტს, მერი გაგუას დაბადების დღეა!",
+    "descriptionEn": "June 1 is the birthday of Georgian cartographer Mary Gagua — a specialist with many years of professional and scientific achievement!",
+    "platform": "facebook",
+    "postUrl": "https://www.facebook.com/photo?fbid=122301554996209715",
+    "publishedAt": "2026-06-01T00:00:00.000Z",
+    "thumbnailUrl": "https://scontent.ftbs5-2.fna.fbcdn.net/v/t39.30808-6/709305739_122301555002209715_3461642187286169493_n.jpg?stp=dst-jpg_tt6&cstp=mx1000x1000&ctp=s1000x1000&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHlhvewozFJbGZ0KtvsQRS-evo_j3eXPDN6-j-Pd5c8M-TzTyV4giI5HyRE6k6dwrB6kKBeeA8q1ZkS49zO7MEH&_nc_ohc=mjz5JNtSutUQ7kNvwGLwno3&_nc_oc=Adom-VccW-quh35PLv3yLFaqG7fvBoKOMwhKKnl8PsiohptuNKH5IcmkzmJRGRsxlz4&_nc_zt=23&_nc_ht=scontent.ftbs5-2.fna&_nc_gid=tDIozBO2mIaiVTtZ0R4eVA&_nc_ss=7b2a8&oh=00_Af_MWb-iazOfyfN7USl1rgbAtyvphI41za-iis3jgZC2aQ&oe=6A299834"
+  },
+  {
+    "id": "9",
+    "pinned": false,
+    "title": "1 ივნისი მიხეილ ქავთარაძის ხსოვნის დღეა!",
+    "titleEn": "June 1 — In Memory of Mikheil Kavtaradze",
+    "description": "საქართველოს კარტოგრაფთა ასოციაცია პატივით იხსენებს ქართული კარტოგრაფიის ერთ-ერთ გამორჩეულ წარმომადგენელს, მიხეილ სტეფანეს ძე ქავთარაძეს (1892–1974), რომლის სახელს განსაკუთრებული ადგილი უკავია საქართველოს კარტოგრაფიული მეცნიერებისა და პრაქტიკის ისტორიაში.",
+    "descriptionEn": "The Georgian Cartographers Association honors the memory of one of the outstanding representatives of Georgian cartography, Mikheil Stefane's dze Kavtaradze (1892–1974), whose name occupies a special place in the history of Georgian cartographic science and practice.",
+    "platform": "facebook",
+    "postUrl": "https://www.facebook.com/photo?fbid=122301598160209715",
+    "publishedAt": "2026-06-01T00:00:00.000Z",
+    "thumbnailUrl": "https://scontent.ftbs5-2.fna.fbcdn.net/v/t39.30808-6/713624229_122301598166209715_4206457034940511530_n.jpg?stp=dst-jpg_tt6&cstp=mx1000x1000&ctp=s1000x1000&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeE45UJXX2k1s8CY81XabDfOJouCzC0zJPwmi4LMLTMk_EJd3gNNjnFOA5JQTbcaD42fsCgc73CuzmLkHhF7Dw2f&_nc_ohc=QhDWoZGvfb0Q7kNvwHRzZUd&_nc_oc=AdoWCdzafgyIjFWnnftgB4PhGUrKu6oDA_3V5xRCWiRNMID4ZUds5Z7l06nP9k3-_4E&_nc_zt=23&_nc_ht=scontent.ftbs5-2.fna&_nc_gid=Fmdt3LIVDh78r5-oK4LeTg&_nc_ss=7b2a8&oh=00_Af8Lne255z0TMjNWbL-xZXFu8JRob8Wi2m8I33SKTMoSKw&oe=6A29ACA2"
+  },
+  {
+    "id": "10",
+    "pinned": false,
+    "title": "ოთარ ჩხეიძე - გეოგრაფიულ მეცნიერებათა დოქტორი",
+    "titleEn": "Otar Chkheidze — Doctor of Geographical Sciences",
+    "description": "საქართველოს კარტოგრაფთა ასოციაცია პატივს მიაგებს ქართველი გეოგრაფის, კარტოგრაფისა და მეცნიერის, ოთარ ჩხეიძის ხსოვნას, რომლის დაბადებიდან დღეს 90 წელი შესრულდა.",
+    "descriptionEn": "The Georgian Cartographers Association honors the memory of Otar Chkheidze, a Georgian geographer, cartographer and scientist, whose 90th birthday is celebrated today.",
+    "platform": "facebook",
+    "postUrl": "https://www.facebook.com/photo?fbid=122301616376209715",
+    "publishedAt": "2026-06-01T00:00:00.000Z",
+    "thumbnailUrl": "https://scontent.ftbs5-2.fna.fbcdn.net/v/t39.30808-6/713483377_122301616382209715_3388204254031693777_n.jpg?stp=dst-jpg_tt6&cstp=mx1000x1000&ctp=s1000x1000&_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGbDXGRfpzUHY_wWfezElzih3_Cq2fqauCHf8KrZ-pq4Oewqsyct7WfSpxDJNePj6a025IVBeAEFifLa5Fph4Dg&_nc_ohc=gu5r7Ai06PwQ7kNvwGhAvVt&_nc_oc=AdqXAFW2SWvxj1DzvFaxPJYutd4xjxLOuovsM6vDxpJiYYTaMDwBqFwdR3BdE1O5mZ8&_nc_zt=23&_nc_ht=scontent.ftbs5-2.fna&_nc_gid=3WVrJVAb9sT6-1XECWP86w&_nc_ss=7b2a8&oh=00_Af8-nx8uxhd6MZvm57j_jS95bvJl1wT4z3FQpLavyw0DhQ&oe=6A299D9D"
+  }
+,
+  {
+    "id": "11",
+    "pinned": false,
+    "title": "თსუ საბავშვო უნივერსიტეტი",
+    "titleEn": "TSU Children's University",
+    "description": "საქართველოს კარტოგრაფთა ასოციაცია, თსუ საბავშვო უნივერსიტეტთან თანამშრომლობით, იწყებს მზადებას 2026 წლის საბავშვო რუკების კონკურსისთვის, რომელიც კვლავ გააერთიანებს ახალგაზრდა შემოქმედებს, მომავალ კარტოგრაფებსა და გეოგრაფიით დაინტერესებულ მოსწავლეებს.",
+    "descriptionEn": "The Georgian Cartographers Association, in collaboration with TSU Children's University, is beginning preparations for the 2026 Children's Map Competition, which will once again bring together young creators, future cartographers and students interested in geography.",
+    "platform": "facebook",
+    "postUrl": "https://www.facebook.com/photo?fbid=122302281116209715",
+    "publishedAt": "2026-06-01T00:00:00.000Z",
+    "thumbnailUrl": "https://scontent.ftbs5-3.fna.fbcdn.net/v/t39.30808-6/717047745_122302281110209715_3333153584519070279_n.jpg?stp=dst-jpg_tt6&cstp=mx1000x1000&ctp=s1000x1000&_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHeHLwgFYJps0-WFyD6tu7YBvLmj007ONEG8uaPTTs40YtRbzva8Q4fXJUFXUCf9PsT52DJ0HqdC-lGvL0-drU1&_nc_ohc=EKE2-9F3VokQ7kNvwGvyyR_&_nc_oc=Adqiug_fhqR7Ywbbr9WpsGx-KopJ76dfQ91lUtPWgRZDU1jN50vy3KO2pPdYijR-fwA&_nc_zt=23&_nc_ht=scontent.ftbs5-3.fna&_nc_gid=szBboBXn8Y39FRrOnYeObQ&_nc_ss=7b2a8&oh=00_Af_NF5aodiiSio9cv4W6ucccMD8IuL70TeAoMFhioDwiCA&oe=6A299FF7"
   }
 ]

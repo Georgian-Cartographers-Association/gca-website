@@ -24,3 +24,10 @@ thumbnailUrl: ""
 ## იუბილე
 
 პირველი კონფერენცია ეძღვნება გამოჩენილი ქართველი გეოგრაფისა და კარტოგრაფის, კარტოგრაფიის თეორიის ფუძემდებლის, **პროფესორ ალექსანდრე ასლანიკაშვილის** დაბადებიდან 110 წლის იუბილეს.
+
+
+## სასარგებლო ბმულები
+
+- [Facebook ღონისძიება](https://www.facebook.com/events/4010800775889946)
+- [International Conference Cartography and Modernity CAM 2026 — Conference Index](https://conferenceindex.org/event/international-conference-cartography-and-modernity-cam-2026-october-tbilisi-ge)
+- [YouTube — საპრეზენტაციო ვიდეო](https://www.youtube.com/watch?v=F_NmfBEodG0)
