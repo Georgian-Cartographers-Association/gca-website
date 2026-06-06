@@ -1,6 +1,7 @@
 import socialPostsData from "@/data/socialPosts.json";
 import { SocialPostCard } from "@/components/ui/SocialPostCard";
 import { getTranslations } from "next-intl/server";
+import { fetchOgImage } from "@/lib/fetchOgImage";
 
 type SocialPost = {
   id: string;
@@ -33,6 +34,13 @@ export default async function NewsPage({
   const { locale } = await params;
   const t = await getTranslations("news");
 
+  const postsWithImages = await Promise.all(
+    sortedPosts.map(async (post) => {
+      const thumbnail = post.thumbnailUrl ?? (await fetchOgImage(post.postUrl));
+      return { ...post, thumbnailUrl: thumbnail };
+    })
+  );
+
   return (
     <div>
       <section className="bg-[#0a2342] text-white py-20">
@@ -54,7 +62,7 @@ export default async function NewsPage({
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {sortedPosts.map((post) => (
+              {postsWithImages.map((post) => (
                 <SocialPostCard
                   key={post.id}
                   post={{ ...post, _id: post.id, thumbnailUrl: post.thumbnailUrl ?? undefined }}
