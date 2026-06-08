@@ -8,7 +8,7 @@ import { useTranslations, useLocale } from "next-intl";
 type RoleKey = "board" | "scientific" | "president_board" | "vice_president_board" | "secretary_general_board" | "academic_secretary_board";
 
 const team: { name: string; nameEn: string; role: RoleKey; photo?: string }[] = [
-  { name: "თენგიზ გორდეზიანი", nameEn: "Tengiz Gordeziani", role: "president_board" },
+  { name: "თენგიზ გორდეზიანი", nameEn: "Tengiz Gordeziani", role: "president_board", photo: "/team/Tengiz_Gordeziani.png" },
   { name: "თედო გორგოძე", nameEn: "Tedo Gorgodze", role: "vice_president_board", photo: "https://cpjh7clklgrmjqio.public.blob.vercel-storage.com/team/Tedo_Gorgodze.jpg" },
   { name: "ზურაბ ლაოშვილი", nameEn: "Zurab Laoshvili", role: "vice_president_board", photo: "https://cpjh7clklgrmjqio.public.blob.vercel-storage.com/team/Zurab_Laoshvili.jpg" },
   { name: "გოჩა გუძუაძე", nameEn: "Gocha Gudzuadze", role: "vice_president_board", photo: "https://cpjh7clklgrmjqio.public.blob.vercel-storage.com/team/Gocha_Gudzuadze.jpg" },
@@ -27,7 +27,7 @@ const team: { name: string; nameEn: string; role: RoleKey; photo?: string }[] = 
   { name: "გიორგი კაპანაძე", nameEn: "Giorgi Kapanadze", role: "scientific", photo: "https://cpjh7clklgrmjqio.public.blob.vercel-storage.com/team/Giorgi_Kapanadze.jpg" },
   { name: "ნატო მაისურაძე", nameEn: "Nato Maisuradze", role: "scientific" },
   { name: "რობერტ მაღლაკელიძე", nameEn: "Robert Maghlakelidze", role: "scientific", photo: "https://cpjh7clklgrmjqio.public.blob.vercel-storage.com/team/Robert_Maghlakelidze.jpg" },
-  { name: "დემეტრე მოდებაძე", nameEn: "Demetre Modebadze", role: "scientific" },
+  { name: "დემეტრე მოდებაძე", nameEn: "Demetre Modebadze", role: "scientific", photo: "/team/Demetre_Modebadze.png" },
   { name: "გიორგი მძელური", nameEn: "Giorgi Mdzeluri", role: "scientific", photo: "https://cpjh7clklgrmjqio.public.blob.vercel-storage.com/team/Giorgi_Mdzeluri.jpg" },
   { name: "დავით სვანაძე", nameEn: "Davit Svanadze", role: "scientific" },
   { name: "მანანა შარაშენიძე", nameEn: "Manana Sharashenidze", role: "scientific", photo: "https://cpjh7clklgrmjqio.public.blob.vercel-storage.com/team/Manana_Sharashenidze.jpg" },
