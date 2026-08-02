@@ -1,11 +1,11 @@
 ---
-title: "ბავშვთა რუკის ხატვის ეროვნული კონკურსი 2026 — „Maps are for All""
-titleEn: "National Children's Map Drawing Competition 2026 — "Maps are for All""
+title: 'ბავშვთა რუკის ხატვის ეროვნული კონკურსი 2026 — Maps are for All'
+titleEn: 'National Children''s Map Drawing Competition 2026 — Maps are for All'
 publishedAt: "2026-08-02"
 category: "კონკურსი"
 categoryEn: "Competition"
-excerpt: "საქართველოს კარტოგრაფთა ასოციაცია და თსუ საბავშვო უნივერსიტეტი აცხადებს ბავშვთა რუკის ხატვის პირველ ეროვნულ კონკურსს — „Maps are for All". კონკურსში მონაწილეობა შეუძლია 6-დან 15 წლამდე ყველა ბავშვს."
-excerptEn: "The Georgian Cartographers Association and TSU Child University announce the first national children's map drawing competition — "Maps are for All". Children aged 6 to 15 from across Georgia are invited to participate."
+excerpt: 'საქართველოს კარტოგრაფთა ასოციაცია და თსუ საბავშვო უნივერსიტეტი აცხადებს ბავშვთა რუკის ხატვის პირველ ეროვნულ კონკურსს — Maps are for All. კონკურსში მონაწილეობა შეუძლია 6-დან 15 წლამდე ყველა ბავშვს.'
+excerptEn: 'The Georgian Cartographers Association and TSU Child University announce the first national children''s map drawing competition — Maps are for All. Children aged 6 to 15 from across Georgia are invited to participate.'
 thumbnailUrl: "/images/bavshvta-konkursi-2026-poster.jpg"
 attachments:
   - label: "კონკურსის რეგლამენტი"
