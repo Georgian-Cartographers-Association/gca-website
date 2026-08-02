@@ -4,15 +4,23 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
-import { ArrowLeft, Calendar, Tag } from "lucide-react";
+import { ArrowLeft, Calendar, Tag, Download } from "lucide-react";
 import { getTranslations } from "next-intl/server";
+
+type Attachment = {
+  label: string;
+  labelEn?: string;
+  file: string;
+};
 
 type PostMeta = {
   title: string;
   titleEn?: string;
   publishedAt: string;
   category?: string;
+  categoryEn?: string;
   thumbnailUrl?: string;
+  attachments?: Attachment[];
 };
 
 function getPost(slug: string): { meta: PostMeta; content: string } | null {
@@ -98,6 +106,27 @@ export default async function BlogPostPage({
               prose-li:mb-1">
               <ReactMarkdown>{content}</ReactMarkdown>
             </div>
+
+            {meta.attachments && meta.attachments.length > 0 && (
+              <div className="mt-10 pt-8 border-t border-[#0a2342]/10">
+                <p className="text-xs text-[#0a2342]/40 uppercase tracking-wider mb-4">{t("attachments")}</p>
+                <div className="flex flex-col gap-3">
+                  {meta.attachments.map((att, i) => (
+                    <a
+                      key={i}
+                      href={att.file}
+                      download
+                      className="inline-flex items-center gap-3 bg-[#0a2342] text-white px-5 py-3 rounded-lg hover:bg-[#0a2342]/85 transition-colors w-full sm:w-auto"
+                    >
+                      <Download size={16} className="shrink-0" />
+                      <span className="text-sm font-medium">
+                        {locale === "en" && att.labelEn ? att.labelEn : att.label}
+                      </span>
+                    </a>
+                  ))}
+                </div>
+              </div>
+            )}
 
             <div className="mt-10 pt-8 border-t border-[#0a2342]/10">
               <p className="text-xs text-[#0a2342]/40 uppercase tracking-wider">{t("author")}</p>
