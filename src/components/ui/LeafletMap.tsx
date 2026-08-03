@@ -9,7 +9,7 @@ const LAT = 41.7099824;
 const LNG = 44.7779992;
 const ZOOM = 17;
 
-export default function LeafletMap() {
+export default function LeafletMap({ locale }: { locale?: string }) {
   useEffect(() => {
     // Leaflet must run client-side only
     import("leaflet").then((L) => {
@@ -77,7 +77,7 @@ export default function LeafletMap() {
         rel="noopener noreferrer"
         className="flex items-center justify-center gap-2 bg-[#0a2342] text-white text-sm font-semibold py-3 hover:bg-[#0a2342]/80 transition-colors"
       >
-        🗺️ Google Maps-ზე ნახვა
+        {locale === "en" ? "🗺️ View on Google Maps" : "🗺️ Google Maps-ზე ნახვა"}
       </a>
     </div>
   );

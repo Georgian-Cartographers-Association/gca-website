@@ -39,6 +39,14 @@ export default async function ContactPage({
                   {locale === "en" ? "I. Chavchavadze Ave. 3" : "ილია ჭავჭავაძის გამზირი 3"}<br />
                   {locale === "en" ? "Tbilisi 0128, Georgia" : "თბილისი 0128, საქართველო"}
                 </p>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=I.+Chavchavadze+Ave+3+Tbilisi+Georgia"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-2 text-xs text-[#c8a951] hover:underline"
+                >
+                  {t("view_on_maps")}
+                </a>
               </div>
             </div>
 
@@ -103,7 +111,7 @@ export default async function ContactPage({
 
           </div>
 
-          <LeafletMap />
+          <LeafletMap locale={locale} />
         </div>
       </section>
     </div>
