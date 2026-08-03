@@ -47,7 +47,7 @@ export default function Footer({ locale }: { locale: string }) {
               {t("contact")}
             </h4>
             <ul className="space-y-2 text-sm text-white/70">
-              <li>📍 I. Chavchavadze Ave. 3, Tbilisi 0128</li>
+              <li>📍 {locale === "en" ? "I. Chavchavadze Ave. 3, Tbilisi 0128" : "ილია ჭავჭავაძის გამზირი 3, თბილისი 0128"}</li>
               <li>📧 geocartographersassoc@gmail.com</li>
               <li>📞 {tc("phone_saba")}: 579 711 715</li>
               <li>📞 {tc("phone_gocha")}: 577 554 429</li>
