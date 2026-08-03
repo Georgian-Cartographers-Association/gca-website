@@ -77,7 +77,7 @@ export default async function BlogPostPage({
 
         <article className="bg-white rounded-lg shadow-sm overflow-hidden">
           {meta.thumbnailUrl && (
-            <div className="relative h-72 w-full">
+            <div className="relative w-full aspect-square">
               <Image src={meta.thumbnailUrl} alt={title} fill className="object-cover" />
             </div>
           )}
