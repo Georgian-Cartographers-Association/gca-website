@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import ScrollToTop from "@/components/ui/ScrollToTop";
 
 export const metadata: Metadata = {
   title: "საქართველოს კარტოგრაფთა ასოციაცია",
@@ -33,6 +34,7 @@ export default async function LocaleLayout({
           <Navbar />
           <main className="flex-1">{children}</main>
           <Footer locale={locale} />
+          <ScrollToTop />
         </NextIntlClientProvider>
       </body>
     </html>
