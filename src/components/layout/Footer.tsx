@@ -24,9 +24,6 @@ export default function Footer({ locale }: { locale: string }) {
                 {tc("org_name")}
               </span>
             </div>
-            {locale === "en" && (
-              <p className="text-white/50 text-xs mt-2">Georgian Cartographers Association · სკა</p>
-            )}
           </div>
 
           <div>
