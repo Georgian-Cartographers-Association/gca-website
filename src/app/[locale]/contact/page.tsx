@@ -7,7 +7,7 @@ export default async function ContactPage({
 }: {
   params: Promise<{ locale: string }>;
 }) {
-  await params;
+  const { locale } = await params;
   const t = await getTranslations("contact");
 
   return (
@@ -36,8 +36,8 @@ export default async function ContactPage({
               <div>
                 <p className="text-xs text-[#0a2342]/50 uppercase tracking-wider mb-1">{t("address")}</p>
                 <p className="text-[#0a2342] text-sm font-medium leading-relaxed">
-                  I. Chavchavadze Ave. 3<br />
-                  Tbilisi 0128, საქართველო
+                  {locale === "en" ? "I. Chavchavadze Ave. 3" : "ილია ჭავჭავაძის გამზირი 3"}<br />
+                  {locale === "en" ? "Tbilisi 0128, Georgia" : "თბილისი 0128, საქართველო"}
                 </p>
               </div>
             </div>
