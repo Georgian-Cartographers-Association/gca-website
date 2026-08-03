@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Globe, BookOpen, Users, Award, Mail, Phone } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 
+
 export default async function MembershipPage({
   params,
 }: {
@@ -9,6 +10,7 @@ export default async function MembershipPage({
 }) {
   const { locale } = await params;
   const t = await getTranslations("membership");
+  const tc = await getTranslations("contact");
 
   const benefits = [
     { icon: Globe, textKey: "benefit_ica" as const },
@@ -83,12 +85,12 @@ export default async function MembershipPage({
           <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4 text-[#0a2342]/60 text-sm">
             <a href="tel:+995579711715" className="flex items-center gap-2 hover:text-[#c8a951] transition-colors">
               <Phone size={16} />
-              საბა მოდებაძე — 579 711 715
+              {tc("phone_saba")} — 579 711 715
             </a>
             <span className="hidden sm:block">·</span>
             <a href="tel:+995577554429" className="flex items-center gap-2 hover:text-[#c8a951] transition-colors">
               <Phone size={16} />
-              გოჩა გუძუაძე — 577 554 429
+              {tc("phone_gocha")} — 577 554 429
             </a>
           </div>
 
