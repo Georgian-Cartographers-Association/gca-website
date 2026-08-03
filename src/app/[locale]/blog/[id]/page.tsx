@@ -4,6 +4,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import { ArrowLeft, Calendar, Tag, Download } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 
@@ -103,8 +104,12 @@ export default async function BlogPostPage({
               prose-a:text-[#c8a951] prose-a:underline hover:prose-a:text-[#0a2342]
               prose-strong:text-[#0a2342]
               prose-ul:text-[#0a2342]/80 prose-ol:text-[#0a2342]/80
-              prose-li:mb-1">
-              <ReactMarkdown>{content}</ReactMarkdown>
+              prose-li:mb-1
+              prose-table:w-full prose-table:border-collapse
+              prose-th:bg-[#0a2342] prose-th:text-white prose-th:px-4 prose-th:py-2 prose-th:text-left prose-th:font-semibold
+              prose-td:border prose-td:border-[#0a2342]/15 prose-td:px-4 prose-td:py-2 prose-td:text-[#0a2342]/80
+              [&_tr:nth-child(even)_td]:bg-[#0a2342]/5">
+              <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
             </div>
 
             {meta.attachments && meta.attachments.length > 0 && (
