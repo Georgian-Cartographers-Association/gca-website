@@ -2,7 +2,12 @@ import { MapPin, Mail, Phone, Clock } from "lucide-react";
 import LeafletMap from "@/components/ui/LeafletMap";
 import { getTranslations } from "next-intl/server";
 
-export default async function ContactPage() {
+export default async function ContactPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  await params;
   const t = await getTranslations("contact");
 
   return (
@@ -59,7 +64,7 @@ export default async function ContactPage() {
                 <Phone size={20} className="text-[#c8a951]" />
               </div>
               <div>
-                <p className="text-xs text-[#0a2342]/50 uppercase tracking-wider mb-1">საბა მოდებაძე</p>
+                <p className="text-xs text-[#0a2342]/50 uppercase tracking-wider mb-1">{t("phone_saba")}</p>
                 <a
                   href="tel:+995579711715"
                   className="text-[#0a2342] text-sm font-medium hover:text-[#c8a951] transition-colors"
@@ -75,7 +80,7 @@ export default async function ContactPage() {
                 <Phone size={20} className="text-[#c8a951]" />
               </div>
               <div>
-                <p className="text-xs text-[#0a2342]/50 uppercase tracking-wider mb-1">გოჩა გუძუაძე</p>
+                <p className="text-xs text-[#0a2342]/50 uppercase tracking-wider mb-1">{t("phone_gocha")}</p>
                 <a
                   href="tel:+995577554429"
                   className="text-[#0a2342] text-sm font-medium hover:text-[#c8a951] transition-colors"

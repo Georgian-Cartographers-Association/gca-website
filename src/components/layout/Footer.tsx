@@ -3,6 +3,7 @@ import { useTranslations } from "next-intl";
 
 export default function Footer({ locale }: { locale: string }) {
   const t = useTranslations("footer");
+  const tc = useTranslations("contact");
   const year = new Date().getFullYear();
 
   const links = [
@@ -20,10 +21,12 @@ export default function Footer({ locale }: { locale: string }) {
             <div className="flex items-center gap-3 mb-3">
               <Image src="/logo.png" alt="GCA Logo" width={44} height={44} className="rounded-full" />
               <span className="font-semibold text-sm leading-tight">
-                საქართველოს კარტოგრაფთა ასოციაცია
+                {tc("org_name")}
               </span>
             </div>
-            <p className="text-white/50 text-xs mt-2">Georgian Cartographers Association</p>
+            {locale === "en" && (
+              <p className="text-white/50 text-xs mt-2">Georgian Cartographers Association · სკა</p>
+            )}
           </div>
 
           <div>
@@ -46,14 +49,14 @@ export default function Footer({ locale }: { locale: string }) {
             <ul className="space-y-2 text-sm text-white/70">
               <li>📍 I. Chavchavadze Ave. 3, Tbilisi 0128</li>
               <li>📧 geocartographersassoc@gmail.com</li>
-              <li>📞 საბა მოდებაძე: 579 711 715</li>
-              <li>📞 გოჩა გუძუაძე: 577 554 429</li>
+              <li>📞 {tc("phone_saba")}: 579 711 715</li>
+              <li>📞 {tc("phone_gocha")}: 577 554 429</li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-white/10 mt-8 pt-6 text-center text-white/40 text-xs">
-          © {year} საქართველოს კარტოგრაფთა ასოციაცია. {t("rights")}.
+          © {year} {tc("org_name")}. {t("rights")}.
         </div>
       </div>
     </footer>
