@@ -24,12 +24,19 @@ type PostMeta = {
   attachments?: Attachment[];
 };
 
-function getPost(slug: string): { meta: PostMeta; content: string } | null {
+const EN_DELIMITER = "<!-- ENGLISH -->";
+
+function getPost(slug: string): { meta: PostMeta; contentKa: string; contentEn: string } | null {
   const filePath = path.join(process.cwd(), "src/content/blog", `${slug}.md`);
   if (!fs.existsSync(filePath)) return null;
   const raw = fs.readFileSync(filePath, "utf-8");
   const { data, content } = matter(raw);
-  return { meta: data as PostMeta, content };
+  const parts = content.split(EN_DELIMITER);
+  return {
+    meta: data as PostMeta,
+    contentKa: parts[0].trim(),
+    contentEn: parts[1]?.trim() ?? parts[0].trim(),
+  };
 }
 
 export default async function BlogPostPage({
@@ -54,8 +61,9 @@ export default async function BlogPostPage({
     );
   }
 
-  const { meta, content } = post;
+  const { meta, contentKa, contentEn } = post;
   const title = locale === "en" && meta.titleEn ? meta.titleEn : meta.title;
+  const content = locale === "en" ? contentEn : contentKa;
 
   return (
     <div className="bg-[#f8f5ef] min-h-screen">

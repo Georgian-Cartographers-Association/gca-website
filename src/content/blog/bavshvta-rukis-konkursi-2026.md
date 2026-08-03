@@ -75,3 +75,65 @@ attachments:
 ## გამოფენა
 
 საუკეთესო ნამუშევრები გამოიფინება საერთაშორისო სამეცნიერო კონფერენციის **Cartography and Modernity (CAM 2026)** ფარგლებში, სადაც დაესწრებიან ქართველი და უცხოელი მეცნიერები, ICA-ს წარმომადგენლები და საერთაშორისო სტუმრები.
+
+<!-- ENGLISH -->
+
+The **Georgian Cartographers Association (GCA)** and the **TSU Child University** jointly announce the first National Children's Map Drawing Competition — *Maps are for All*.
+
+The competition is based on the principles of the International Cartographic Association (ICA) Children's Map Competition. Official sponsor: **GT Survey EDU**.
+
+## Theme
+
+**"Maps are for All"**
+
+Participants are invited to express their own vision of how maps help people in everyday life — in education, travel, culture, sport, environmental protection, and inclusive environments.
+
+## Age Categories
+
+| Category | Age |
+|----------|-----|
+| Category I | Under 6 |
+| Category II | 6–8 years |
+| Category III | 9–12 years |
+| Category IV | 13–15 years |
+
+## Who Can Participate?
+
+All pupils of public and private schools in Georgia, as well as Georgian-language educational institutions, are eligible. Only **individual entries** are accepted — one participant, one artwork.
+
+## Artwork Requirements
+
+- **Format:** A3
+- **Technique:** Coloured pencils, markers, ink, watercolour, gouache, pastel, collage, or mixed media
+- **Language:** All inscriptions on the artwork (title, legend, toponyms) must be in **English**, as entries are evaluated by an international jury
+- The artwork **must** represent a **map** with cartographic elements
+
+## Evaluation Criteria
+
+| Criterion | Points |
+|-----------|--------|
+| Relevance to theme | 20 |
+| Cartographic content | 20 |
+| Creativity | 20 |
+| Visual communication | 15 |
+| Design & composition | 15 |
+| Technical execution | 10 |
+| **Total** | **100** |
+
+## How to Submit
+
+Each participant must submit:
+
+1. The competition artwork (A3)
+2. Completed **Application Form** (Annex 1)
+3. **Parental consent form** (Annex 2) — required for participants under 15
+
+Download the forms using the links below.
+
+## Awards
+
+In each age category, 1st, 2nd and 3rd places will be awarded. Special nominations may also be given: **Grand Prix**, **Best Cartographic Idea**, **Best Artistic Design**, **GT Survey EDU Award**, and others.
+
+## Exhibition
+
+The best entries will be exhibited at the international scientific conference **Cartography and Modernity (CAM 2026)**, attended by Georgian and international scientists, ICA representatives, and guests from around the world.
