@@ -56,8 +56,17 @@ export default function PhotoSlider({
               src={src}
               alt=""
               fill
+              sizes="200px"
+              aria-hidden
+              className="object-cover blur-2xl scale-110 opacity-60"
+              unoptimized={src.endsWith(".svg")}
+            />
+            <Image
+              src={src}
+              alt=""
+              fill
               sizes="(min-width: 1280px) 1200px, 100vw"
-              className="object-cover"
+              className="object-contain"
               priority={i === 0}
               unoptimized={src.endsWith(".svg")}
             />
