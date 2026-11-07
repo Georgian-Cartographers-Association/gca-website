@@ -6,7 +6,8 @@
     "blog": "News",
     "membership": "Membership",
     "atlas": "Digital Atlas",
-    "contact": "Contact"
+    "contact": "Contact",
+    "gallery": "Gallery"
   },
   "hero": {
     "title": "Georgian Cartographers Association",
@@ -130,5 +131,12 @@
     "news_link": "News",
     "atlas_link": "Digital Atlas",
     "membership_link": "Membership"
+  },
+  "gallery": {
+    "label": "Photos",
+    "title": "Gallery",
+    "prev": "Previous",
+    "next": "Next",
+    "full_album": "Full album"
   }
 }

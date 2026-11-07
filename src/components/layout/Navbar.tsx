@@ -10,6 +10,7 @@ import { Menu, X, Globe } from "lucide-react";
 const navLinks = [
   { key: "about", href: "/about" },
   { key: "news", href: "/news" },
+  { key: "gallery", href: "/gallery" },
   { key: "blog", href: "/blog" },
   { key: "membership", href: "/membership" },
   { key: "atlas", href: "/atlas" },
