@@ -1,0 +1,30 @@
+{
+  "albums": [
+    {
+      "id": "cartography-and-modernity",
+      "title": "პირველი საერთაშორისო კონფერენცია „კარტოგრაფია და თანამედროვეობა“",
+      "titleEn": "First International Conference “Cartography and Modernity”",
+      "albumUrl": "https://photos.app.goo.gl/TgJeWid31uXfhodu5",
+      "photos": [
+        "/images/gallery/gallery-01.jpg",
+        "/images/gallery/gallery-02.jpg",
+        "/images/gallery/gallery-03.jpg",
+        "/images/gallery/gallery-04.jpg",
+        "/images/gallery/gallery-05.jpg",
+        "/images/gallery/gallery-06.jpg",
+        "/images/gallery/gallery-07.jpg",
+        "/images/gallery/gallery-08.jpg",
+        "/images/gallery/gallery-09.jpg",
+        "/images/gallery/gallery-10.jpg",
+        "/images/gallery/gallery-11.jpg",
+        "/images/gallery/gallery-12.jpg",
+        "/images/gallery/gallery-13.jpg",
+        "/images/gallery/gallery-14.jpg",
+        "/images/gallery/gallery-15.jpg"
+      ],
+      "description": "29 - 31 ოქტომბერი, 2026. თბილისი, საქართველო",
+      "descriptionEn": "October 29 - 31, 2026. Tbilisi, Georgia",
+      "websiteUrl": "https://cam2026.tsu.ge/"
+    }
+  ]
+}
