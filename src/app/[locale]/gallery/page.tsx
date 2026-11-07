@@ -7,6 +7,9 @@ type Album = {
   id: string;
   title: string;
   titleEn?: string;
+  description?: string;
+  descriptionEn?: string;
+  websiteUrl?: string;
   albumUrl?: string;
   photos: string[];
 };
@@ -38,7 +41,31 @@ export default async function GalleryPage({
             <h2 className="text-2xl md:text-3xl font-bold font-serif text-[#0a2342] mb-3">
               {locale === "en" && album.titleEn ? album.titleEn : album.title}
             </h2>
-            <div className="w-16 h-1 bg-[#c8a951] rounded mb-8" />
+            <div className="w-16 h-1 bg-[#c8a951] rounded mb-4" />
+            {(album.description || album.websiteUrl) && (
+              <p className="text-[#0a2342]/70 text-base md:text-lg mb-8 flex flex-wrap items-center gap-x-4 gap-y-1">
+                {(locale === "en" && album.descriptionEn
+                  ? album.descriptionEn
+                  : album.description) && (
+                  <span>
+                    {locale === "en" && album.descriptionEn
+                      ? album.descriptionEn
+                      : album.description}
+                  </span>
+                )}
+                {album.websiteUrl && (
+                  <a
+                    href={album.websiteUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-[#0a2342] font-medium underline decoration-[#c8a951] underline-offset-4 hover:text-[#12335f]"
+                  >
+                    {album.websiteUrl.replace(/^https?:\/\//, "").replace(/\/$/, "")}
+                    <ExternalLink size={14} />
+                  </a>
+                )}
+              </p>
+            )}
             <PhotoSlider
               photos={album.photos}
               prevLabel={t("prev")}
